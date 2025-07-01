@@ -2,17 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shahroon Lodhi – Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .pdf-container {
+      padding: 30px 10px;
+    }
+
+    embed {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 80%;
+      height: 900px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #002f5f;
+    }
+
+    @media screen and (max-width: 768px) {
+      embed {
+        width: 95%;
+        height: 600px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
-  <h1>Shahroon Lodhi</h1>
-  <h2>My Resume</h2>
+<body>
+  <header>
+    <h1>Shahroon Lodhi</h1>
+    <p>Software Developer · AI/ML Enthusiast · Open to Opportunities</p>
+  </header>
 
-  <embed src="Shahroon_Lodhi%20CV.pdf" type="application/pdf" width="80%" height="800px" />
-
-  <p style="margin-top: 20px;">
-    <a href="Shahroon_Lodhi%20CV.pdf" download>⬇️ Download Resume</a>
-  </p>
+  <div class="pdf-container">
+    <embed src="Shahroon_Lodhi%20CV.pdf" type="application/pdf" />
+    <br />
+    <a href="Shahroon_Lodhi%20CV.pdf" download class="download-btn">⬇ Download My Resume</a>
+  </div>
 </body>
 </html>
